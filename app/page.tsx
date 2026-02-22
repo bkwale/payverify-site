@@ -53,7 +53,7 @@ export default function Home() {
                 Contact
               </a>
               <a
-                href="https://app.payverify.ng/merchant/signup"
+                href="#contact"
                 className="inline-flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary-dark transition-colors"
               >
                 Get Early Access
@@ -87,7 +87,7 @@ export default function Home() {
               </a>
             ))}
             <a
-              href="https://app.payverify.ng/merchant/signup"
+              href="#contact"
               className="block bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-semibold text-center"
             >
               Get Early Access
@@ -120,7 +120,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://app.payverify.ng/merchant/signup"
+                  href="#contact"
                   className="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-primary-dark transition-all hover:shadow-lg hover:shadow-primary/25"
                 >
                   Get Early Access
@@ -283,7 +283,7 @@ export default function Home() {
               {
                 icon: <QrCode className="w-6 h-6" />,
                 title: "Verified QR Codes",
-                desc: "Each merchant is issued a secure QR code tied to their official, verified bank account. Cryptographically signed — impossible for staff to forge or substitute.",
+                desc: "Each merchant is issued a secure QR code tied to their official, verified bank account. Tamper-proof — impossible for staff to forge or substitute.",
                 color: "bg-blue-50 text-blue-600",
               },
               {
@@ -509,16 +509,16 @@ export default function Home() {
                       desc: "No existing player provides merchant-layer payment validation in Nigeria. PayVerify is the first preventive control at the staff\u2013customer interaction point.",
                     },
                     {
-                      title: "Bank Partnership Model",
-                      desc: "SaaS licensing to banks and aggregators. Position partner banks as leaders in proactive upstream risk management.",
+                      title: "Bank Partnerships",
+                      desc: "Working directly with banks and financial institutions to bring merchant-layer validation to their customers.",
                     },
                     {
                       title: "Regulatory Tailwind",
                       desc: "CBN\u2019s cashless economy push and NQR framework compliance create natural demand for merchant-layer validation.",
                     },
                     {
-                      title: "Multiple Revenue Streams",
-                      desc: "Transaction-based fees, merchant subscriptions, bank licensing, and third-party API access from day one.",
+                      title: "Built for Scale",
+                      desc: "Sustainable revenue model designed to grow with the Nigerian digital payments ecosystem from day one.",
                     },
                   ].map((item, i) => (
                     <div key={i}>
@@ -531,63 +531,22 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-white mb-6">
-                  Built With
-                </h3>
-                <div className="space-y-3">
-                  {[
-                    { label: "Frontend", value: "Next.js, React 19, TypeScript" },
-                    { label: "Payments", value: "Paystack Integration" },
-                    { label: "Security", value: "ECDSA Signatures, AES-256" },
-                    { label: "Infra", value: "Vercel Edge Network" },
-                    { label: "Auth", value: "NextAuth.js + MFA" },
-                  ].map((item, i) => (
-                    <div
-                      key={i}
-                      className="flex items-center gap-4 bg-white/5 rounded-xl p-3"
-                    >
-                      <span className="text-xs font-medium text-gray-400 w-20 shrink-0">
-                        {item.label}
-                      </span>
-                      <span className="text-sm text-white">{item.value}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-8">
+                <div>
                   <h3 className="text-2xl font-bold text-white mb-4">
-                    Product Roadmap
+                    What&apos;s Next
                   </h3>
-                  <div className="space-y-4">
-                    <div className="bg-white/10 rounded-xl p-4 border border-white/10">
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="bg-accent text-white text-xs font-bold px-2 py-0.5 rounded-full">
-                          PHASE 2
-                        </span>
-                        <span className="text-sm font-semibold text-white">
-                          Full Payment Collection
-                        </span>
-                      </div>
-                      <p className="text-sm text-gray-400">
-                        Evolving from verification into a full payment processor —
-                        card payments, bank transfers, USSD, and tap-to-pay.
-                        Competing with Moniepoint, Paystack, and Flutterwave with
-                        built-in fraud prevention from day one.
-                      </p>
-                    </div>
-                    <div className="space-y-2">
-                      {[
-                        "FIRS integration for tax reconciliation",
-                        "Merchant credit scoring via transaction data",
-                        "USSD support for non-smartphone users",
-                        "POS terminal & accounting platform integrations",
-                      ].map((item, i) => (
-                        <div key={i} className="flex items-center gap-3">
-                          <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
-                          <span className="text-sm text-gray-400">{item}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+                  <p className="text-sm text-gray-400 mb-6">
+                    PayVerify is actively expanding its product capabilities
+                    beyond verification — with new features in development for
+                    merchants, banks, and regulators across Nigeria.
+                  </p>
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-accent/90 transition-colors"
+                  >
+                    Partner With Us
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -608,7 +567,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://app.payverify.ng/merchant/signup"
+              href="#contact"
               className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-xl text-base font-semibold hover:bg-gray-50 transition-colors"
             >
               Get Early Access
@@ -733,7 +692,7 @@ export default function Home() {
               </div>
               <p className="text-sm text-gray-400 leading-relaxed">
                 Merchant-layer payment validation for Nigeria. Preventing staff
-                payment diversion with cryptographic verification.
+                payment diversion with verified QR codes.
               </p>
             </div>
             <div>
@@ -751,7 +710,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="https://app.payverify.ng/merchant/login"
+                    href="#contact"
                     className="hover:text-white transition-colors"
                   >
                     Merchant Portal
@@ -802,10 +761,10 @@ export default function Home() {
           </div>
           <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-sm text-gray-500">
-              &copy; 2025 PayVerify &mdash; A TechSanctum Product. All rights reserved.
+              &copy; 2025 PayVerify. All rights reserved.
             </p>
             <p className="text-sm text-gray-500">
-              Built in Lagos &amp; Tallinn.
+              Built in Lagos, Nigeria.
             </p>
           </div>
         </div>
