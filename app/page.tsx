@@ -52,6 +52,12 @@ export default function Home() {
               <a href="#contact" className="text-sm font-medium text-gray-600 hover:text-primary transition-colors">
                 Contact
               </a>
+              <a href="https://app.payverify.ng/partners/banks" className="text-sm font-medium text-gray-600 hover:text-primary transition-colors">
+                Partners
+              </a>
+              <a href="https://app.payverify.ng/merchant/login" className="text-sm font-medium text-gray-600 hover:text-primary transition-colors">
+                Merchant Login
+              </a>
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary-dark transition-colors"
@@ -76,6 +82,8 @@ export default function Home() {
               { href: "#how-it-works", label: "How It Works" },
               { href: "#market", label: "Market" },
               { href: "#contact", label: "Contact" },
+              { href: "https://app.payverify.ng/partners/banks", label: "Partners" },
+              { href: "https://app.payverify.ng/merchant/login", label: "Merchant Login" },
             ].map((item) => (
               <a
                 key={item.href}
@@ -127,8 +135,14 @@ export default function Home() {
                   <ArrowRight className="w-5 h-5" />
                 </a>
                 <a
-                  href="#problem"
+                  href="https://app.payverify.ng/pay/test-payment-1"
                   className="inline-flex items-center justify-center gap-2 border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl text-base font-semibold hover:border-primary hover:text-primary transition-all"
+                >
+                  Try Demo
+                </a>
+                <a
+                  href="#problem"
+                  className="inline-flex items-center justify-center gap-2 text-gray-700 px-8 py-4 rounded-xl text-base font-semibold hover:text-primary transition-all"
                 >
                   Learn More
                 </a>
@@ -574,6 +588,12 @@ export default function Home() {
               <ArrowRight className="w-5 h-5" />
             </a>
             <a
+              href="https://app.payverify.ng/merchant/signup"
+              className="inline-flex items-center justify-center gap-2 bg-white/10 text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/20 transition-colors"
+            >
+              Get Started
+            </a>
+            <a
               href="#contact"
               className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/10 transition-colors"
             >
@@ -710,7 +730,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="#contact"
+                    href="https://app.payverify.ng/merchant/login"
                     className="hover:text-white transition-colors"
                   >
                     Merchant Portal
